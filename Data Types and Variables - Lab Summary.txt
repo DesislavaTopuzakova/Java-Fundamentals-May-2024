@@ -1,0 +1,36 @@
+1. Scope - обхват на използване 
+2. Lifetime - време на съществуване 
+3. Span - интервал между създаване и използване на променлива: интервалът трябва да е максимално кратък.
+
+//Целочислен тип данни
+byte -> short -> int -> long -> BigInteger
+
+	default value -> 0
+
+	Литерали:
+	Ако имаме L или l, означава, че имаме long
+	Ако имаме 0X означава, че имаме шеснайсетична форма 
+
+//Реални числа
+float -> double -> BigDecimal
+
+	default value -> 0.0
+	
+	Литерали:
+	Ако имам D или d -> имаме doulble 
+	Ако имаме F или f -> имаме float
+	
+	
+
+//BigDecimal & BigInteger
+
+	.add - събиране
+	.substract - изваждане
+	.multiply - умножение
+	.divide - деление
+	.divideAndReminder - остатъка от делението
+	
+//Type conversion
+
+	Implicit - не губим информация;
+	Explicit - имаме загуба на информация;
