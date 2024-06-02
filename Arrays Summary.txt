@@ -1,36 +1,40 @@
-1. Scope - обхват на използване 
-2. Lifetime - време на съществуване 
-3. Span - интервал между създаване и използване на променлива: интервалът трябва да е максимално кратък.
+## Arrays / Масиви
 
-//Целочислен тип данни
-byte -> short -> int -> long -> BigInteger
 
-	default value -> 0
+<img width="759" alt="image" src="https://github.com/DesislavaTopuzakova/Java-Fundamentals-January-2024/assets/34713586/626fa283-ff70-484a-ba11-54e56dd42e1b">
 
-	Литерали:
-	Ако имаме L или l, означава, че имаме long
-	Ако имаме 0X означава, че имаме шеснайсетична форма 
 
-//Реални числа
-float -> double -> BigDecimal
+### Четене на масив от конзолата
+1. Масив от текстове: **String[] stringArr = scanner.nextLine().split(" ");**
+2. Масив от цели числа: **int[] integerArr = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();**
+3. Масив от дробни числа: **double[] doubleArr = Arrays.stream(scanner.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();**
+4. Масив от символи: **char[] charArr = scanner.nextLine().toCharArray();**
 
-	default value -> 0.0
-	
-	Литерали:
-	Ако имам D или d -> имаме doulble 
-	Ако имаме F или f -> имаме float
-	
-	
+   
+![image](https://github.com/DesislavaTopuzakova/Java-Fundamentals-January-2024/assets/34713586/0def0a92-d18d-47c7-bd36-4672f1ca91cb)
 
-//BigDecimal & BigInteger
 
-	.add - събиране
-	.substract - изваждане
-	.multiply - умножение
-	.divide - деление
-	.divideAndReminder - остатъка от делението
-	
-//Type conversion
 
-	Implicit - не губим информация;
-	Explicit - имаме загуба на информация;
+### Достъпване на елемент на масив
+1. Масив от текстове: **String firstItem = stringArr[0];**
+2. Масив от цели числа: **int firstItem = integerArr[0];**
+3. Масив от дробни числа: **double firstItem = doubleArr[0];**
+4. Масив от символи: **char firstItem = charArr[0];**
+
+### Сортиране на масив
+1. Масив от текстове: **Arrays.sort(stringArr);**
+2. Масив от цели числа: **Arrays.sort(integerArr);**
+3. Масив от дробни числа: **Arrays.sort(doubleArr);**
+4. Масив от символи: **Arrays.sort(charArr);**
+
+### Отпечатване на масив
+1. **For** цикъл:
+**for (int i = 0; i < integerArr.length; i++) {
+   System.out.print(integerArr[i] + " ");
+}**
+2. **Foreach** цикъл:
+**for (int item : integerArr) {
+   System.out.print(item + " ");
+}**  
+3. Метод **String.join** (само за масив от текстове): **System.out.println(String.join(", ", stringArr));**
+4. Метод **replaceAll**: **System.out.println(Arrays.toString(integerArr).replaceAll("[\\[\\]]",""));**
