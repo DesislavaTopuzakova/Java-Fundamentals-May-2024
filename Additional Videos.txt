@@ -47,3 +47,6 @@
 3. Big Factorial (Objects and Classes - Lab)
 видео: https://youtu.be/wI5K4rdmEew
 решение: https://pastebin.com/S8aKbQ2w
+
+10. The Lift (Arrays - Exercise)
+Видео: https://www.youtube.com/watch?v=0VaBsqxbecU
