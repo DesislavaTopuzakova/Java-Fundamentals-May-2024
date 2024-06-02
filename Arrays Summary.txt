@@ -1,19 +1,10 @@
 ## Arrays / Масиви
 
-
-<img width="759" alt="image" src="https://github.com/DesislavaTopuzakova/Java-Fundamentals-January-2024/assets/34713586/626fa283-ff70-484a-ba11-54e56dd42e1b">
-
-
 ### Четене на масив от конзолата
 1. Масив от текстове: **String[] stringArr = scanner.nextLine().split(" ");**
 2. Масив от цели числа: **int[] integerArr = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();**
 3. Масив от дробни числа: **double[] doubleArr = Arrays.stream(scanner.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();**
 4. Масив от символи: **char[] charArr = scanner.nextLine().toCharArray();**
-
-   
-![image](https://github.com/DesislavaTopuzakova/Java-Fundamentals-January-2024/assets/34713586/0def0a92-d18d-47c7-bd36-4672f1ca91cb)
-
-
 
 ### Достъпване на елемент на масив
 1. Масив от текстове: **String firstItem = stringArr[0];**
@@ -32,9 +23,11 @@
 **for (int i = 0; i < integerArr.length; i++) {
    System.out.print(integerArr[i] + " ");
 }**
+
 2. **Foreach** цикъл:
 **for (int item : integerArr) {
    System.out.print(item + " ");
 }**  
+
 3. Метод **String.join** (само за масив от текстове): **System.out.println(String.join(", ", stringArr));**
 4. Метод **replaceAll**: **System.out.println(Arrays.toString(integerArr).replaceAll("[\\[\\]]",""));**
